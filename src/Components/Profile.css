@@ -1,0 +1,302 @@
+.profile-page {
+  position: fixed;
+  height: 200rem;
+  background-color: rgb(255, 207, 202);
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#userinfo {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 2.8%;
+  height: 90px;
+  filter: brightness(100%);
+  color: green;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  width: 100%;
+  padding-right: 70%;
+}
+
+#userinfo h1 {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+#userinfo p {
+  margin-top: -5px;
+  font-size: 20px;
+}
+
+#orders {
+  position: absolute;
+  overflow-y: scroll;
+  right: 10%;
+  top: 5%;
+  overflow-x: hidden;
+  margin-top: 4%;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  background: white;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 72%;
+  width: 75%;
+}
+
+#orders::-webkit-scrollbar {
+  display: none;
+}
+
+#ordersinfo p {
+  color: white;
+  padding-right: 5%;
+  padding-top: 2%;
+  font-size: 30px;
+  font-weight: 500;
+  transform: scaleY(1.15);
+}
+
+#orderscontainer {
+  color: black;
+  padding: 5% 5%;
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(1.15);
+}
+
+.cart-items {
+  border: 0.2px solid white;
+  margin-left: 10%;
+  background-color: white;
+  border: 1px solid grey;
+  height: 100%;
+  width: 70%;
+  padding: 10px 40px;
+}
+
+.cart-item {
+  margin-top: -2%;
+}
+
+#quantity,
+#price,
+#itemname {
+  display: inline-block;
+  width: 30%;
+  margin: 0 4%;
+}
+
+.cart-items img {
+  margin-top: 25px;
+  height: 90px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.cart-item p {
+  padding-left: 5%;
+  color: black;
+  display: inline-block;
+}
+
+#date {
+  margin-left: 2%;
+  display: inline-block;
+}
+
+#totalpaid {
+  margin-left: 60%;
+  display: inline-block;
+}
+
+#orderscontainer p {
+  color: black;
+  font-size: 22px;
+}
+
+#line {
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+/* Responsive CSS */
+@media (max-width: 1280px) {
+  .profile-page {
+    top: 0%;
+  }
+
+  #userinfo h1 {
+    font-size: 25px;
+  }
+
+  #userinfo p {
+    font-size: 18px;
+  }
+
+  #orderscontainer {
+    margin-top: 5%;
+    padding: 5% 5%;
+  }
+
+  #orders p {
+    font-size: 18px;
+  }
+
+  #orders {
+    right: 5%;
+    width: 90%;
+  }
+
+  .cart-items {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-page {
+    top: 0%;
+  }
+
+  #userinfo {
+    padding-right: 20%;
+  }
+
+  #orders {
+    right: 2%;
+    width: 95%;
+  }
+
+  #orders p {
+    font-size: 18px;
+  }
+
+  #orderscontainer {
+    margin-top: 5%;
+    padding: 7% 5%;
+  }
+
+  #totalpaid {
+    margin: 3% -10%;
+  }
+
+  #itemname,
+  #quantity,
+  #price {
+    display: inline-block;
+    margin: 0% 5%;
+  }
+
+  .cart-items {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    top: 0%;
+  }
+
+  #itemname,
+  #quantity,
+  #price {
+    display: inline-block;
+    margin: 2% 7%;
+  }
+
+  .cart-item p {
+    font-size: 16px;
+  }
+
+  #orders p {
+    font-size: 16px;
+  }
+
+  #orderscontainer {
+    padding: 12% 5%;
+  }
+
+  #totalpaid {
+    margin: 3% -10%;
+  }
+
+  #userinfo h1 {
+    font-size: 22px;
+  }
+
+  #userinfo p {
+    font-size: 16px;
+  }
+
+  #orders {
+    height: 60%;
+  }
+
+  .cart-items {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-page {
+    margin-top: 0%;
+  }
+
+  #userinfo h1 {
+    font-size: 20px;
+  }
+
+  #itemname,
+  #quantity,
+  #price {
+    display: inline-block;
+    margin: 1% 10%;
+  }
+
+  #userinfo p {
+    font-size: 14px;
+  }
+
+  #orders {
+    height: 60%;
+  }
+  #line{
+    width: 130%;
+    margin-left: -15%;
+  }
+
+  .cart-items {
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  #ordersinfo p {
+    font-size: 12px;
+  }
+
+  .cart-item img {
+    width: 60%;
+  
+  }
+
+  #orderscontainer {
+    padding-top: 18%;
+   
+    font-size: 14px;
+  }
+
+  #totalpaid {
+    margin: 3% -10%;
+  }
+}

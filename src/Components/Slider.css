@@ -1,0 +1,62 @@
+
+#slider{
+z-index: 0;
+  display: flex;
+  background-size: contain;
+  filter:brightness(80%);
+
+ 
+   
+}
+iframe {
+
+
+ margin-top: -3.2rem;
+  
+
+  height: 1300px;
+
+  width: 2080px;
+  
+
+  border: none;
+}
+.slide{
+    display: flex;
+    position: absolute;
+    width: 100%;
+   
+        height: 75%;
+
+   
+  
+   
+    top:5%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Makes sure it's on top of the iframe */
+}
+
+
+@media (max-width:480px) {
+  iframe{
+   height: 600px;
+  
+   width:900px;
+  }
+  
+
+  
+}
+@media (width:540px){
+  iframe{
+  height: 650px;
+  width: 1150px;
+
+}
+}

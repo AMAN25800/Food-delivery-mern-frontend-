@@ -1,0 +1,229 @@
+/* Base styles for email verifier form */
+.email-verifier {
+  position: fixed;
+  top: 11.5%;
+  right: 0; /* Positioned at the rightmost side */
+  height: 100%;
+  width: 30%; /* Adjust width based on screen */
+  background-color: white;
+  box-shadow: 0px 0px 2px;
+  z-index: 7;
+  padding-bottom: 20px; /* Add some padding for better spacing */
+  transition: all 0.3s ease;
+}
+
+/* Close button styling */
+#closebtn {
+  margin-left: -110%;
+  background-color: white;
+  border: none;
+  width: 22%;
+  height: 5%;
+  margin-top: 1%;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 35px;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 8px;
+  cursor: pointer;
+}
+
+/* Form styling */
+.email-verifier form {
+  padding-top: 17%;
+}
+
+.email-verifier form input {
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.email-verifier form label {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.email-verifier form button {
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Styling for OTP input box */
+#otpbox {
+  display: flex;
+  justify-content: space-between; /* Space out the boxes evenly */
+  margin-top: 10px;
+  width: 90%; /* Ensure OTP boxes fit inside the div */
+  margin-left: 5%; /* Center the OTP input boxes within the div */
+}
+
+/* OTP input styling */
+.otp-input {
+  flex: 1; /* Make OTP boxes flexible to fill the available space */
+  max-width: 55px; /* Adjust max width */
+  height: 45px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otp-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* OTP submit button */
+button[type='otpsubmit'] {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Responsive Media Queries */
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .email-verifier {
+      width: 90%;
+      right: 0;
+      left: auto;
+      top: 8%;
+  }
+
+  .otp-input {
+      max-width: 45px;
+      height: 40px;
+      font-size: 18px;
+  }
+
+  #closebtn {
+      margin-left: -85%;
+      width: 40%;
+      height: 6%;
+  }
+}
+
+/* For tablets and small laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .email-verifier {
+      width: 50%;
+      right: 0;
+      left: auto;
+      top: 10%;
+  }
+  
+
+  .otp-input {
+      max-width: 50px;
+      max-height: 30px;
+      height: 43px;
+      font-size: 18px;
+  }
+
+
+}
+
+/* For small desktops (max-width: 1200px) */
+@media (max-width: 1287px) {
+  .email-verifier {
+      width: 30%;
+      right: 0;
+      left: auto;
+      top: 10%;
+  }
+
+  .otp-input {
+      max-width: 52px;
+      height: 44px;
+      font-size: 19px;
+  }
+  #closebtn {
+    margin-left: -120%; /* Center the close button */
+    width: 35%; /* Increase the width for better touch support */
+    height: 6%; /* Adjust height for better spacing */
+    font-size: 18px; /* Reduce the font size slightly */
+    border-radius: 30px; /* Slightly reduce border-radius */
+}
+}
+/* Responsive styling for screens below or up to 600px */
+@media (max-width: 600px) {
+  /* Email verifier container */
+  .email-verifier {
+      width: 70%; /* Make it take full width of the screen */
+      height:100%; /* Allow it to adjust height automatically */
+      right: 0%; /* Keep it aligned to the right */
+      left: 30%; /* Center it by applying both right and left 0 */
+      top: 11%; /* Adjust the top position to give more space */
+      padding: 10px; /* Add padding for better spacing */
+  }
+
+  /* Close button */
+  #closebtn {
+      margin-left: -110%; /* Center the close button */
+      width: 35%; /* Increase the width for better touch support */
+      height: 6%; /* Adjust height for better spacing */
+      font-size: 18px; /* Reduce the font size slightly */
+      border-radius: 30px; /* Slightly reduce border-radius */
+  }
+
+  /* Form fields */
+  .email-verifier form {
+      padding-top: 10%; /* Adjust padding at the top */
+  }
+
+  .email-verifier form input {
+      width: 100%; /* Input fields take full width */
+      margin-left: 0; /* Remove left margin */
+      padding: 12px; /* Increase padding for better spacing */
+      font-size: 16px; /* Adjust font size */
+  }
+
+  .email-verifier form button {
+      width: 70%; /* Button takes full width */
+      margin-left: 15%; /* Remove left margin */
+      padding: 12px; /* Adjust padding */
+      font-size: 18px;
+  }
+
+  /* OTP box styling */
+  #otpbox {
+      display: flex;
+      justify-content: space-between; /* Space between OTP boxes */
+      width: 100%; /* Ensure OTP boxes take full width */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Add space between label and OTP boxes */
+  }
+
+  /* OTP input styling */
+  .otp-input {
+      max-width: 45px; 
+      max-height: 40px;/* Reduce the size for smaller screens */
+      height: 40px; /* Adjust height */
+      font-size: 18px; /* Adjust font size */
+      margin: 0 8px; /* Reduce the space between OTP boxes */
+  }
+
+  /* OTP submit button */
+  button[type='otpsubmit'] {
+      width: 100%; /* Button takes full width */
+      margin: 20px 20%; /* Add space above and below */
+      padding: 12px;
+      font-size: 18px; /* Adjust padding for better touch interaction */
+  }
+
+  /* OTP text label */
+  #otptext {
+      font-size: 20px; /* Adjust font size */
+      margin-top: 20px; /* Add margin to space it properly */
+      text-align: center; /* Center align the OTP text */
+  }
+  
+}

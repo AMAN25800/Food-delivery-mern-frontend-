@@ -1,0 +1,819 @@
+#navbar{
+   position: fixed;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+   
+
+ height: max-content;
+    box-shadow: 0px 5px 10px;
+}
+.navbar-title{
+   
+    
+    margin-left: 10px;
+    text-decoration: none;
+    font-size:31px;
+    background-image: url('https://media.istockphoto.com/id/1143287651/photo/red-canvas-background.jpg?s=612x612&w=0&k=20&c=Upvw3dSJkW2Tyvt4NKsP_sdSW1D-NjvYiiRZoMy0HH0=');
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    opacity: 0.9;
+
+    transform: scale(1.1,1.3);
+    font-weight: bold;
+}
+
+
+.container-fluid{
+    display: flex;
+    gap:50px;
+}
+#navitems{
+  
+    
+ 
+    
+    margin-left:70%;
+    margin-top:0.5%;
+    display: flex;
+    gap:30px;
+   
+    left: 62%;
+}
+
+.signin{
+       margin-top:-3px;
+       
+        border-radius: 5px;
+        width:max-content;
+        height: 40px;
+        font-size:18px;
+      
+        background-color:white;
+        border: none;
+        border:none;
+      
+        box-shadow:0px 2px 3px;
+     font-weight:500;
+        -webkit-background-clip: text;
+     
+        
+        -webkit-text-fill-color:red;
+        
+        
+}
+.profile{
+    margin-top:-0.5rem;
+    display: flex;
+    gap:30px;
+   z-index: 5;
+    position: fixed;
+    top:3%;
+  right:20%;
+
+}
+.profileexpander{
+    position: fixed;
+    height: 300px;
+    width:240px;
+    background-color: white;
+    box-shadow: 0px 0px 9px;
+   top:10.4%;
+   z-index: 5;
+    margin-left: 67%;
+    border-top:2.5px solid red;
+       
+
+}
+.profileexpander ul{
+    top:10%;
+    display: flex;
+    position: relative;
+    color:black;
+    font-weight: 400;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size: 20px;
+    gap:8px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid orange; 
+  /* Triangle color similar to Swiggy's theme */
+    position: absolute;
+    top: 38px; /* Adjust to align triangle with the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line{
+    width: 100%;
+    height: 2.1px;
+    background-color:orange;
+    position: relative;
+
+}
+.location{
+  text-decoration:none;
+  color:black;
+  font-size:18px;
+}
+.location p{
+  display: inline-block;
+  text-transform: capitalize;
+  margin-top:10px;
+  margin-left: 5px;
+}
+.location  :hover{
+
+  color:tomato;
+}
+.container-box{
+  position: fixed;
+  left: 0%;;
+  height: 100%;
+  width: 35%;
+  background-color:white;
+  z-index: 5;
+  box-shadow: 0px 0px 10px;
+  animation: expandWidth 0.3s ease-in-out forwards;
+  
+}
+
+.close{
+  position: fixed;
+  left:5%;
+  top:4%;
+}
+.location-content{
+  position: fixed;
+  top:16%;
+  left: 5%;
+  box-shadow: 0px 0px 2px;
+  background-color: white;
+  height: 100px;
+  width:23rem;
+  animation: expandContent 0.3s ease-in-out forwards;
+  
+
+ 
+  
+ 
+}
+
+.current-location-container{
+  position: fixed;
+  text-decoration: none;
+  color:black;
+  left:7%;
+  margin-top:1.5%;
+  overflow: hidden; /* To hide the content when width is 0 */
+  font-weight: 600;
+  font-size: 17px;
+
+ 
+  
+}
+.current-location-container :hover{
+  color:tomato;
+}
+#savedaddress{
+  position: absolute;
+  top:35%;
+  left: 13%;
+  padding: 20px;
+  background-color:white;
+  height: 500px;
+  width: 23rem;
+  box-shadow: 0px 0px 2px;
+  overflow-y:scroll;
+  
+}
+#savedaddress p{
+  font-size:18px;
+  text-transform: uppercase;
+
+}
+#gpstext{
+  position:fixed;
+  top:15%;
+  left:5%;
+  font-size:15px;
+  margin-top:3.5%;
+  margin-left:4.5%;
+}
+#locationdata{
+  position: fixed;
+  top:15%;
+  left:'0%';
+  z-index: 5;
+}
+#address{
+  position: fixed;
+ 
+  top:15%;
+ 
+  background-color: white;
+  z-index:5;
+  height: 100%;
+  width:35%;
+  left: 0%;
+  color:black;
+ 
+  font-size:18px;
+}
+
+#address p {
+  display: inline; /* Ensure block display for the paragraph */
+  margin: 5px; /* Reset margin if any */
+  word-wrap: break-word; /* Make sure words break if too long */
+  overflow-wrap: break-word; /* Handle text overflow */
+  text-align: left; /* Align text if needed */
+}
+#addresscontent{
+  position:fixed;
+  top:18%;
+  left: 2%;
+  width:30%;
+  height: max-content;
+  background-color: white;
+  box-shadow: 0px 0px 0px;
+  border-radius: none;
+  box-shadow: 0px 0px 2px  grey;
+  
+}
+#addressbtn{
+  position: fixed;
+  color:tomato;
+  font-weight: 600;
+  text-transform: uppercase;
+ 
+  height: 100px;
+  width:400px;
+  border:2px solid tomato;
+  top:45%;
+  left: 4%;
+  word-spacing: 2px;
+}
+#addressbtn2{
+  position: fixed;
+  color:tomato;
+  font-weight: 600;
+  text-transform: uppercase;
+ 
+  height: 100px;
+  width:400px;
+  border:2px solid tomato;
+  top:67%;
+  left: 4%;
+  word-spacing: 2px;
+}
+
+#completeaddress{
+  position: fixed;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  height:400px;
+  width:400px;
+ box-shadow: 0px 0px 2px  grey;
+  top:32%;
+  left: 4%;
+}
+#or{
+  position: fixed;
+
+  font-weight: 600;
+  text-transform: uppercase;
+left:15%;
+font-size: 20px;
+
+  top:60%;
+
+}
+
+#completeaddress form{
+  font-size: 16px;
+  font-weight: 500;
+  color:tomato;
+  border: none;
+ 
+  text-transform:none;
+}
+#radiobutton{
+  margin-top:2px;
+  color:black;
+  display: flex;
+}
+.form-check{
+  display: flex;
+  gap:20px;
+}
+#radiobutton label{
+  display: flex;
+  margin-left: -15px;
+}
+#addresssubmit{
+  margin-top:8%;
+  font-size: 20px;
+
+  font-weight: 600;
+  text-transform: capitalize;
+  
+}
+
+  
+#addresscard {
+  background-color: #ffff;
+  border-radius:10px;
+ 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  margin-top:20px;
+
+
+ 
+ 
+ 
+
+ 
+
+}
+.card-body{
+  background-color: white;
+  border:none;
+}
+#logout{
+  background-color: white;
+  
+}
+
+
+
+
+@keyframes expandWidth {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 35% /* Full width after 4 seconds */
+  }
+}
+@keyframes expandContent {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 23rem /* Full width after 4 seconds */
+  }
+}
+/* General styles for responsive navigation */
+@media (max-width: 1280px) {
+  @keyframes expandContent{
+    0% {
+        width: 0;
+    }
+  
+    100% {
+        width: 40% /* Full width after 4 seconds */
+    }
+  }
+  @keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+  
+    100% {
+        width: 30% /* Full width after 4 seconds */
+    }
+  }
+    .navbar-title {
+      margin-top: 10px;
+      font-size: 24px; /* Slightly larger for larger screens */
+    }
+  
+    .signin {
+      font-size: 16px; /* Adjust font size for better readability */
+    }
+  
+    .profile {
+      left: 70%; /* Centering adjustments */
+      top: 20px; /* Position above the profile expander */
+    }
+  
+    .profile img {
+      height: 35px; /* Slightly larger for better visibility */
+    }
+  
+    .profileexpander {
+      left: -90px; /* Adjust to position it off-screen */
+      width: 240px; /* Wider for better usability */
+      top: 80px; /* Position below the profile icon */
+    }
+    .container-box{
+      z-index: 6;
+         
+      animation: expandContent 0.3s ease-in-out forwards;
+      
+    }
+     .location-content{
+  
+     
+        animation: expandWidth 0.3s ease-in-out forwards;
+        padding: 10px;
+        
+      }
+      #savedaddress{
+        width: 90%;
+        margin-left: -5%;
+      }
+      #gpstext{
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+   
+
+  }
+
+  
+  @media (max-width: 992px) {
+    @keyframes expandContent{
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 55% /* Full width after 4 seconds */
+      }
+    }
+    @keyframes expandWidth {
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 48% /* Full width after 4 seconds */
+      }
+    }
+    .navbar-title {
+      font-size: 22px; /* Smaller title for medium screens */
+    }
+  
+    .signin {
+      position: fixed;
+      top:9%;
+      left: 4%;
+      font-size: 15px; /* Smaller font for better fit */
+    }
+  
+    .profile {
+      left: 70%;
+      top: 25px; /* Adjusted for medium screens */
+    }
+  
+    .profile img {
+      height: 30px; /* Maintain size for consistency */
+    }
+  
+    .profileexpander {
+      left: -60px; /* Fine-tune position */
+      top: 75px; /* Adjust position for medium screens */
+    }
+   .location{
+    position: fixed;
+    top:1%;
+    left: 23%;
+   }
+   #navitems{
+    margin-top: -8%;
+    
+  }
+  .container-box{
+    z-index: 6;
+       
+    animation: expandContent 0.3s ease-in-out forwards;
+    
+  }
+   .location-content{
+
+   
+      animation: expandWidth 0.3s ease-in-out forwards;
+      padding: 10px;
+      
+    }
+    #savedaddress{
+      width: 90%;
+      margin-left: -5%;
+    }
+    #gpstext{
+      margin-top: 8%;
+      margin-left: 8%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    @keyframes expandContent{
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 75% /* Full width after 4 seconds */
+      }
+    }
+    @keyframes expandWidth {
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 60% /* Full width after 4 seconds */
+      }
+    }
+    .navbar-title {
+      margin-top: 10px;
+      font-size: 20px; /* Smaller font for mobile */
+    }
+  
+    .signin {
+      position: fixed;
+      top:9%;
+      left: 4%;
+      font-size: 14px; /* Maintain size for mobile */
+    }
+  
+    .profile {
+      left: 60%; /* Maintain for mobile */
+      top: 25px; /* Position above the profile expander */
+    }
+  
+    .profile img {
+      height: 30px; /* Maintain size for mobile */
+    }
+  
+    .profileexpander {
+      left: -120px; /* Adjust position for mobile */
+      width: 220px; /* Maintain width for usability */
+      top: 70px; /* Adjust position for smaller screens */
+    }
+    .location p{
+      display: none;
+    }
+    .location img{
+      position: fixed;
+      top:2.3%;
+  
+      left: 40%;
+    }
+    #navitems{
+      margin-top: -13%;
+    }
+    .container-box{
+      z-index: 6;
+         
+      animation: expandContent 0.3s ease-in-out forwards;
+      
+    }
+    #savedaddress{
+      width: 90%;
+      margin-left: -5%;
+    }
+    .location-content{
+
+   
+      animation: expandWidth 0.3s ease-in-out forwards;
+      padding: 10px;
+      
+    }
+    #gpstext{
+      margin-top:11%;
+      margin-left: 10%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    @keyframes expandContent{
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 17rem /* Full width after 4 seconds */
+      }
+    }
+    @keyframes expandWidth {
+      0% {
+          width: 0;
+      }
+    
+      100% {
+          width: 68% /* Full width after 4 seconds */
+      }
+    }
+    .navbar-title {
+      font-size: 22px; /* Even smaller font for very small screens */
+    }
+  
+    .signin {
+      position: fixed;
+      left:5%;
+      top:9%;
+      width: 120px;
+      font-size: 13px; /* Smaller font for compact view */
+    }
+  
+    .profile {
+      left: 70%; /* Slight adjustment for very small screens */
+      top: 30px;
+      gap:20px /* Adjust position */
+    }
+  
+    .profile img {
+      height: 25px; /* Smaller for very small screens */
+    }
+  
+    .profileexpander {
+      left: -100px; /* Further adjust position */
+      width: 200px; /* Slightly narrower for very small screens */
+      top: 80px;
+     /* Adjust position */
+    }
+    .location img{
+      position: fixed;
+      top:3%;
+      left:46%;
+    }
+    .location p{
+      display: none;
+    }
+    .container-box{
+
+     
+    
+      z-index: 6;
+
+    
+      animation: expandContent 0.3s ease-in-out forwards;
+    }
+    .location-content{
+          
+      z-index: 6;
+
+    
+      animation: expandWidth 0.3s ease-in-out forwards;
+      
+
+     
+    }
+    #navitems{
+      margin-top: -18%;
+    }
+  #gpstext{
+    top:18%;
+    left: 10%;
+
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  #address {
+    width: 73%; /* Full width for small screens */
+    font-size: 14px;
+    z-index: 6; /* Smaller font size */
+  }
+  
+ #addresscontent,
+  #completeaddress {
+ 
+    width: 70%;
+   /* Full width for small screens */
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 68%; /* Full width for small buttons */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  #or {
+    font-size: 16px; /* Smaller font size */
+    left: 30%; /* Adjust position */
+  }
+  #addresssubmit{
+   
+    font-size: 15px;
+  }
+
+}
+
+/* For small screens (max-width: 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  #address {
+    width: 75%; /* Slightly smaller width */
+  }
+  
+  #addresscontent,
+  #completeaddress {
+    width: 70%; /* Full width */
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 68%; /* Full width */
+  }
+  #or{
+    left:30%;
+  }
+}
+
+/* For medium screens (max-width: 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  #address {
+    width: 55%; /* Adjust width */
+  }
+  
+  #addresscontent,
+  #completeaddress {
+    width: 50%; /* Adjust width */
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 47%; /* Adjust button width */
+  }
+  #or{
+    left: 25%;
+  }
+}
+
+/* For larger medium screens (max-width: 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  #address {
+    width: 55%; /* Adjust width */
+  }
+  
+  #addresscontent,
+  #completeaddress {
+    width: 50%; /* Adjust width */
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 45%; /* Adjust button width */
+  }
+  #or{
+    left: 22%;
+  }
+}
+
+/* For larger screens (max-width: 1024px) */
+@media (min-width: 993px) and (max-width: 1024px) {
+  #address {
+    width: 40%; /* Adjust width */
+  }
+  
+ 
+  #completeaddress {
+    width: 36%;
+    margin-left: -2%;
+    /* Adjust width */
+  }
+  #addresscontent{
+    width: 36%;
+    margin-top: -4%;
+
+  }
+  #addresssubmit{
+    margin-top: -15%;
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 32%; /* Adjust button width */
+  }
+}
+
+/* For extra large screens (max-width: 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #address {
+    width: 40%; /* Adjust width */
+  }
+  
+  #addresscontent,
+  #completeaddress {
+    width: 35%; /* Adjust width */
+  }
+
+  #addressbtn,
+  #addressbtn2 {
+    width: 32%; /* Adjust button width */
+  }
+}

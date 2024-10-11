@@ -1,0 +1,96 @@
+/* General styles for the login page */
+.userpage {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+  
+
+   
+  }
+  
+  /* Responsive styling for the user display */
+  .user {
+    position: fixed; /* Make the user div fixed */
+    top:0%; /* Adjust to position just below the navbar */
+    right: 24%; /* Align to the right */
+    transform: translateY(100%); /* Move it downwards relative to its own height */
+    z-index: 5;
+    font-size: 18.2px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Adjust the user font size and position for smaller screens */
+/* General styles for the login page */
+.userpage {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+  
+  }
+  
+  /* Responsive styling for the user display */
+  .user {
+    position: fixed; /* Keep the user div fixed */
+    top: -1%; /* Position it below the navbar */
+    right: 23.5%; /* Align it to the right */
+    /* Adjust to place it below the profile icon */
+    z-index: 5;
+    font-size: 22px; /* Use viewport width for responsive font size */
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Adjust the user position and font size for various screen sizes */
+  @media(width:1280px){
+    .user {
+      font-size: 20px; /* Slightly larger font size for smaller screens */
+      right: 24.7%;
+      top: 0%; /* Adjust position */
+    }
+
+  }
+  @media (max-width: 1280px) {
+    .user {
+      font-size: 20px; /* Slightly larger font size for smaller screens */
+      right: 25%;
+      top: 0%; /* Adjust position */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .user {
+      font-size: 20px; /* Adjust for tablets and smaller devices */
+      right:24%;
+      top: 0%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .user {
+      font-size: 20px;/* Adjust for smaller tablets */
+      right: 23%;
+      top: 0%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .user {
+      font-size: 18px; /* Increase size for mobile */
+      right: 29%;
+      top: 0%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .user {
+      font-size: 15px;/* Adjust further for very small screens */
+      right: 19%;
+      top: 1%;
+    }
+  }
+  

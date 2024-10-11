@@ -1,0 +1,909 @@
+/* General Styles for Cart and Address Containers */
+#cartdata {
+  position: fixed;
+  overflow-y: scroll;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  height: 100%;
+}
+
+
+#cartdata::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Cart Container: Fixed on the right */
+#cartcontainer {
+  position: fixed;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 4px rgb(0,0,0,0.1);
+  right: 4%;
+  top: 14%;
+  background-color: white;
+  height: 80%; /* Allow room for content */
+  width: 28%;
+
+}
+#underline{
+  border: 1px solid lightgray;
+  width:95%;
+  margin-left: 2%;
+  margin-top:4%;
+}
+
+#cartcontainer img {
+  border-radius: 5px;
+  height: 80px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+#cartcontainer ul li p {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Address Container */
+#userdatacontainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 6%;
+  margin-left:3%;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+#userdatacontainer p {
+  font-size: 21px;
+  font-weight: 500;
+}
+#cart p{
+  margin-top:20px;
+  font-weight: 500;
+
+}
+#total{
+  position: fixed;
+  top:95%;
+  background-color: white;
+  font-size: 18px;
+  left: 68%;
+  width: 420px;
+  font-weight: bold;
+  display: inline-block;
+}
+#total p{
+  margin-left:-10%;
+  margin-top: 1%;
+}
+#successmessage{
+  position: fixed;
+  top:12%;
+  right: 1%;
+  height: 7%;
+  width: 23%;
+  z-index: 1;
+  background-color: rgb(101, 176, 101);
+  box-shadow: 0px 0px 4px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  animation: adjustShifting 0.5s ease-in-out forwards;
+}
+
+@keyframes adjustShifting{
+  0%{
+     
+      transform:translateY(0px)
+  }
+  100%{
+      transform: translateY(20px);
+     
+  }
+}
+
+
+/* Form and Sections Inside Address Container */
+#userdatabtn {
+  background-color: #ffff;
+  border-radius: 10px;
+  height: max-content;
+  width: 70%; /* Ensure buttons take full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border: none;
+  margin-left: 10%;
+  
+  margin-top:30px;
+}
+
+#phone{
+  border:none;
+  background-color: white;
+  width: 60%;
+  padding: 20px;
+  margin-left: 3%;
+  margin-top:2%;
+}
+#phoneimg{
+  position: absolute;
+  top:38%;
+
+}
+#phone button{
+  margin-top:-1%;
+  height:45px;
+  margin-left:10px;
+  width:150px;
+  padding:5px;
+  
+ 
+}
+#phone input{
+  display: inline-block;
+ 
+}
+#phone p{
+  font-size: 21px;
+  font-weight: 500;
+  margin-left: -81%;
+}
+#paymentmethod{
+  width: 60%;
+  background-color: white;
+  margin-left: 3%;
+
+ margin-top: 2%;
+  padding: 20px;
+}
+#removebtn img{
+  height: 24px;
+  width: 30px;
+}
+
+#code{
+  width: 10%; /* Responsive input and button width */
+  font-size: 16px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: -100px;
+  border-radius: 5px;
+}
+
+ #paymentmethod button{
+  background-color: #4BB543;
+  width: 60%; /* Responsive input and button width */
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color:white;
+  font-weight: 700;
+  border: none;
+  
+ } 
+#paymentmethod p {
+  margin-left: -70%;
+  font-size: 21px;
+  font-weight: 500;
+}
+#addresstext{
+  margin-top:5%;
+  text-transform: capitalize;
+  
+
+  
+}
+#locationimg{
+  position: absolute;
+  top:14%;
+}
+#paymenticon{
+position: absolute;
+top:65%;
+left: 0.2%;
+ 
+}
+
+#number{
+  width: 50%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+}
+#loaderdiv{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0,0.75);
+
+
+}
+#removebtn{
+  width:20px;
+  height:20px;
+  position:absolute;
+  margin-top:-2%;
+  margin-left:20%
+}
+#phoneimg img{
+  height: 40px;
+}
+#paymenticon img{
+  height: 40px;
+}
+#loadercontent{
+  position: fixed;
+  top:50%;
+  left: 40%;
+}
+#addressdatadiv{
+  background-color: white;
+  width: 40%;
+   margin-left: 10%;
+  padding: 7%;
+   margin-top: 5%;
+   
+  height: 150px;
+  box-shadow: 0px 0px 8px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+  #cartempty{
+    margin-top:7%;
+    
+  }
+  #cartempty img{
+    height: 400px;
+    width: 500px;
+  }
+    #cartempty p{
+      font-size: 30px;
+      color:black;
+      font-weight: 600;
+    }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+/* Responsive Styles for Different Widths */
+@media (max-width: 1280px) {
+  #successmessage {
+    top: 12%;
+    right: 1%;
+    width: 25vw; /* Slightly narrower for medium-sized screens */
+    height: 8vh;
+    font-size: 1.1rem; /* Slightly increase font size */
+  }
+  #cartcontainer {
+    width: 30%;
+  }
+  #userdatacontainer {
+    width: 60%;
+  }
+  #paymentmethod p{
+    margin-left: -60%;
+  }
+  #total{
+    left: 66%;
+    width: 30%;
+  }
+ 
+}
+
+@media (max-width: 1024px) {
+  #cartcontainer {
+  margin-top: 1%;
+   
+    width: 40%;
+   
+  }
+  #userdatacontainer {
+    margin-top: 7%;
+    margin-left: 5%;
+    width: 50%;
+  }
+  #userdatabtn{
+    padding-top: 30px;
+  }
+  #phone{
+    font-size: 18px;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 50%;
+   
+   
+
+  }
+  #phoneimg{
+    top:47%;
+  }
+ 
+  #paymenticon{
+    top:75%;
+   
+    
+  }
+  #phone p{
+    margin-left: -65%;
+  }
+ 
+  #phone button{
+    margin-top:20px;
+    
+   
+
+  }
+  #phone input{
+   display: inline-block;
+   margin-left:3%;
+ 
+   
+  }
+  #code{
+   
+    width: 20%;
+    height: 40px;
+    
+  }
+  #paymentmethod{
+    font-size: 18px;
+    margin-top: 5%;
+    margin-left: 4%;
+    width: 50%;
+    padding-right: 30px;
+  }
+
+  #paymentmethod p{
+   margin-left: -35%;
+  }
+  #number{
+    height: 40px;
+    
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #cartcontainer{
+    right: 2%;
+  }
+  #total{
+    left:58%;
+    width: 400px;
+    margin-top: 4px;
+  }
+  #successmessage {
+    top: 12%;
+    right: 1%;
+    width: 30vw; /* Reduce width for larger screens */
+    font-size:0.9rem; /* Slightly increase font size */
+  }
+}
+
+@media (max-width: 768px) {
+  #cartcontainer {
+    margin-top: 1%;
+     
+      width: 40%;
+    }
+    #userdatacontainer {
+      margin-top:12%;
+      margin-left: 6.5%;
+      width: 50%;
+    }
+    #userdatabtn{
+      padding-top: 30px;
+    }
+    #phone{
+      font-size: 18px;
+      margin-top: 3%;
+      margin-left: 6.5%;
+      width: 50%;
+     
+     
+  
+    }
+    #phoneimg{
+      top:47%;
+    }
+   
+    #paymenticon{
+      top:75%;
+     
+      
+    }
+    #phone p{
+      margin-left: -50%;
+    }
+   
+    #phone button{
+      margin-top:20px;
+      
+     
+  
+    }
+    #phone input{
+     display: inline-block;
+     margin-left:3%;
+   
+     
+    }
+    #code{
+     
+      width: 20%;
+      height: 40px;
+      
+    }
+    #paymentmethod{
+      font-size: 18px;
+      margin-top: 5%;
+      margin-left: 6.5%;
+      width: 50%;
+      padding-right: 30px;
+    }
+    #paymentmethod button{
+      font-size: 16px;
+      width: max-content;
+    }
+  
+    #paymentmethod p{
+     margin-left: -3%;
+    }
+    #number{
+      height: 40px;
+      
+      width: 70%;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    #cartcontainer{
+      right: 2%;
+      overflow-x: hidden;
+    }
+
+    #total{
+      left:54%;
+      top:95.2%;
+      width: 280px;
+      margin-top: 6px;
+      
+      
+    }
+    #total p{
+      margin-left: 1px;
+    }
+    #successmessage {
+      top: 10%;
+      right: 2%;
+      width: 30vw; /* Increase width for better readability */
+      height: 8vh;
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+   
+}
+
+@media (max-width: 600px) {
+  #successmessage {
+    top: 10%;
+    right: 0%;
+    width: 50vw; /* Full width for mobile */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 1rem; /* Adjust font size for small screens */
+    padding: 12px; /* Slightly larger padding for readability */
+  }
+  #cartcontainer {
+    margin-top: 1%;
+     
+      width: 40%;
+      overflow-x: hidden;
+    }
+    #userdatacontainer {
+      margin-top: 13%;
+      margin-left: 5%;
+      width: 50%;
+    }
+    #userdatacontainer p{
+      margin-left: -7%;
+      font-size: 16px;
+    }
+    #userdatabtn{
+      padding-top: 30px;
+    }
+    #phone{
+      font-size: 18px;
+      margin-top: 3%;
+      margin-left: 5%;
+      width: 50%;
+     
+     
+  
+    }
+    #phoneimg{
+      
+      top:47%;
+    }
+    #phoneimg img{
+      height: 25px;
+    }
+    #locationimg img{
+      height: 25px;
+    }
+    #paymenticon img{
+      height: 25px;
+    }
+   
+    #paymenticon{
+      top:75%;
+     
+      
+    }
+    #phone p{
+      margin-left: -50%;
+     font-size: 16px;
+    }
+   
+    #phone button{
+      margin-top:20px;
+   
+  
+    }
+    #phone input{
+     display: inline-block;
+     margin-left:3%;
+   
+     
+    }
+    #code{
+     
+      width: 25%;
+      height: 40px;
+      
+    }
+    #paymentmethod{
+      font-size: 18px;
+      margin-top: 5%;
+      margin-left: 4%;
+      width: 50%;
+      padding-right: 30px;
+    }
+  
+    #paymentmethod p{
+     margin-left: -12%;
+     font-size: 16px;
+    
+    }
+    #paymentmethod button{
+      font-size: 16px;
+      width: max-content;
+    }
+    #number{
+      height: 40px;
+      
+      width: 69%;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    #cartcontainer{
+      right: 2%;
+     
+    }
+    #total{
+      left:40%;
+      width: 280px;
+      margin-top: 4px;
+    }
+    #addbtn Link{
+      margin-left: -20%;
+    }
+    #removebtn{
+      width:20px;
+      height:20px;
+      position:absolute;
+      margin-top:-2%;
+      margin-left:10%
+    }
+    
+}
+/* Basic responsiveness for the form */
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .address-form {
+    padding: 20px;
+  }
+
+  .form-control {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .add-address-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Adjustments for 1285px screen width (typically larger laptops and desktops) */
+@media (min-width: 1025px) and (max-width: 1285px) {
+  .address-form {
+    padding: 30px;
+    max-width: 600px;
+  }
+
+  .form-control {
+    font-size: 17px;
+    padding: 12px;
+  }
+
+  .add-address-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+/* Media Queries for Smaller Devices (below 768px) */
+@media (max-width: 768px) {
+  .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .add-address-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Media Queries for Extra Small Devices (below 576px) */
+
+@media (max-width: 480px) {
+  #successmessage {
+    top: 11%;
+    right: 0%;
+    width: 65vw; /* Full width for mobile */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+  #cartcontainer {
+    margin-top: 9%;
+     
+      width: 40%;
+      height: 70%;
+      overflow-x: hidden;
+    }
+    #userdatacontainer {
+      margin-top: 20%;
+      margin-left: 5%;
+      width: 50%;
+    
+    }
+    #userdatacontainer p{
+      margin-left: -7%;
+      font-size: 12px;
+    }
+    #userdatabtn{
+      padding-top: 30px;
+      width: 100%;
+      height: 100%;
+      font-size: 13px;
+      margin-left: -5px;
+    }
+    #phone{
+      font-size: 18px;
+      margin-top: 3%;
+      margin-left: 5%;
+      width: 50%;
+    
+     
+     
+     
+  
+    }
+    #phoneimg{
+      
+      top:47%;
+    }
+    #phoneimg img{
+      height: 25px;
+    }
+    #locationimg img{
+      height: 25px;
+    }
+    #paymenticon img{
+      height: 25px;
+    }
+   
+    #paymenticon{
+      top:75%;
+     
+      
+    }
+    #phone p{
+      margin-left: -50%;
+     font-size: 12px;
+    }
+   
+    #phone button{
+     margin-top: -1.2%;
+      margin-left: -2%;
+      font-size: 18px;
+      width: 100%;
+   
+   
+       
+      
+     
+  
+    }
+    #phone input{
+     display: inline-block;
+ 
+     margin-left:-5%;
+   
+     
+    }
+    #code{
+     
+      width: 40%;
+      height: 40px;
+      
+    }
+    #paymentmethod{
+      font-size: 18px;
+      margin-top: 5%;
+      margin-left: 4%;
+      width: 50%;
+      padding-right: 30px;
+    }
+  
+    #paymentmethod p{
+     margin-left: -15%;
+     font-size: 12px;
+    
+    }
+    #paymentmethod button{
+      font-size: 16px;
+      width: max-content;
+    }
+    #number{
+      height: 40px;
+      
+      width: 70%;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    #cartcontainer{
+      right: 2%;
+    }
+    #total{
+      left:43%;
+      font-size: 14px;
+      
+      width: 250px;
+      z-index: -1;
+      margin-top: 7px;
+    }
+    #total p{
+      margin-right: 6%;
+    }
+    #removebtn{
+   
+      position:absolute;
+      margin-top:-5%;
+      margin-left:3%
+    }
+    #removebtn img{
+   
+    
+     height: 20px;
+     width: 20px;
+    } 
+   
+}
+
+/* Ensure scroll behavior inside cartcontainer */
+#cartcontainer {
+  overflow-y: scroll;
+}
+
+/* For screens larger than 1280px */
+@media (min-width: 1280px) {
+  #addressdatadiv {
+    max-width: 700px;      /* Maximum width for very large screens */
+    padding: 6%;            /* Adjust padding */
+  }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1024px) {
+  #addressdatadiv {
+    max-width: 600px;      /* Set max-width for large displays */
+    padding: 5%;            /* Adjust padding */
+  }
+}
+/* For screens larger than 992px */
+@media (min-width: 769px) {
+  #addressdatadiv {
+    padding: 10%;
+
+    
+    width: 60%;            /* Maintain padding */
+         /* Set a suitable max-width */
+  }
+  #AddNewAddressData{
+    width: 100%;
+    
+    height: 60px;
+
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  #addressdatadiv {
+    width: 70%;        /* Adjust width */
+    margin-left: 9%;   /* Decrease left margin */
+    padding: 6%;       /* Adjust padding */
+  }
+  #AddNewAddressData{
+    width: 100%;
+    margin-top: 16%;
+    height: 60px;
+
+    font-size: 15px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  #addressdatadiv {
+    width: 85%;        /* Take up most of the screen */
+    margin-left: 5%; 
+    height: 120px;  /* Center with smaller left margin */
+    padding: 8%;       /* Reduce padding */
+  }
+  #AddNewAddressData{
+    width: 100%;
+    margin-top: 15%;
+
+    font-size: 15px;
+  }
+}
