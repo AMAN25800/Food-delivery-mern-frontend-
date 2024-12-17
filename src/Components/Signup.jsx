@@ -34,7 +34,7 @@ const Signup=()=>{
     there and storing or getting the response
     */
     try {
-      const response = await fetch('https://foodil.onrender.com/adduser', {
+      const response = await fetch('https://foodil-n60i.onrender.com/adduser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -48,14 +48,13 @@ const Signup=()=>{
       if (data.success) {
         // Save the token in localStorage
     
-        localStorage.setItem("token", data.token);
+      
        
 
         // Optionally, you can store user info if needed
      
 
-        const decodedToken = jwtDecode(data.token);
-        console.log("User info from token:", decodedToken); // For your reference
+        // For your reference
 
         setmessage("Signup Successful")
 

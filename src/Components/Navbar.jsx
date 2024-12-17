@@ -42,7 +42,7 @@ const addressArr=[]
     const email = { mail: mailid };
 
     try {
-      const response = await fetch('https://foodil.onrender.com/getusers', {
+      const response = await fetch('https://foodil-n60i.onrender.com/getusers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ const finaladdress={
 
     // Send the address to the backend
     try {
-      const response = await fetch('https://foodil.onrender.com/savelocation', {
+      const response = await fetch('https://foodil-n60i.onrender.com/savelocation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -38,7 +38,7 @@ const CartContainer = () => {
     const email = { mail: mailid };
 
     try {
-      const response = await fetch('https://foodil.onrender.com/getusers', {
+      const response = await fetch('https://foodil-n60i.onrender.com/getusers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -195,7 +195,7 @@ const redirectToOrderPayment=async(event)=>{
   };
   console.log(cart);
   try {
-    const response = await fetch('https://foodil.onrender.com/addfood', {
+    const response = await fetch('https://foodil-n60i.onrender.com/addfood', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
