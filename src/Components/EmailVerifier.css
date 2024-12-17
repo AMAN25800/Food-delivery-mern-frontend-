@@ -72,6 +72,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
+  color:black;
   transition: border-color 0.3s;
 }
 
@@ -90,7 +91,7 @@ button[type='otpsubmit'] {
 /* Responsive Media Queries */
 
 /* For mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .email-verifier {
       width: 90%;
       right: 0;
@@ -100,8 +101,10 @@ button[type='otpsubmit'] {
 
   .otp-input {
       max-width: 45px;
+      
       height: 40px;
-      font-size: 18px;
+      font-size: 10px;
+      
   }
 
   #closebtn {
@@ -122,11 +125,19 @@ button[type='otpsubmit'] {
   
 
   .otp-input {
-      max-width: 50px;
+      max-width: 30px;
       max-height: 30px;
       height: 43px;
       font-size: 18px;
+     
   }
+  #otpbox {
+    display: flex;
+    justify-content: space-between; /* Space between OTP boxes */
+    width: 100%; /* Ensure OTP boxes take full width */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add space between label and OTP boxes */
+}
 
 
 }
@@ -139,6 +150,7 @@ button[type='otpsubmit'] {
       left: auto;
       top: 10%;
   }
+
 
   .otp-input {
       max-width: 52px;
@@ -205,10 +217,11 @@ button[type='otpsubmit'] {
   /* OTP input styling */
   .otp-input {
       max-width: 45px; 
+    
       max-height: 40px;/* Reduce the size for smaller screens */
       height: 40px; /* Adjust height */
       font-size: 18px; /* Adjust font size */
-      margin: 0 8px; /* Reduce the space between OTP boxes */
+      margin: 0 0px; /* Reduce the space between OTP boxes */
   }
 
   /* OTP submit button */

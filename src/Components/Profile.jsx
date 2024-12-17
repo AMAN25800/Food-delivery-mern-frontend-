@@ -10,7 +10,7 @@ const Profile = () => {
   // Fetch orders based on email
   const fetchOrders = async (email) => {
     try {
-      const response = await fetch(`https://foodil.onrender.com/listfood?email=${encodeURIComponent(email)}`, {
+      const response = await fetch(`https://foodil-n60i.onrender.com/listfood?email=${encodeURIComponent(email)}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

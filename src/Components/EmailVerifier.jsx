@@ -49,7 +49,7 @@ const EmailVerifier=()=>{
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://foodil.onrender.com/send-email', formData);
+            const response = await axios.post('https://foodil-n60i.onrender.com/send-email', formData);
             if (response.data.status.substring(0,7) === 'success') {
                 const num=parseInt(response.data.status.substring(7));
                 setserverotp(num);

@@ -27,7 +27,7 @@ const UpdatePassword =()=>{
             newPassword :pass,
         }
         try {
-            const response = await fetch('https://foodil.onrender.com/update-password', {
+            const response = await fetch('https://foodil-n60i.onrender.com/update-password', {
               method: 'PUT',
               headers: {
                 'Content-Type': 'application/json',
